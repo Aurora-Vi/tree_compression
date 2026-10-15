@@ -1,0 +1,19 @@
+RULES BASED ON SIMPLIFIED CONDITIONS
+
+R1 = (TSE ∧ no_CRR, 1)
+
+R2 = (TSE ∧ CRR, 1)
+
+R3 = (no_TSE ∧ BLI, 3)
+
+R4 = (no_TSE ∧ no_BLI ∧ FPE, 5)
+
+R5 = (no_TSE ∧ no_BLI ∧ no_FPE ∧ KP, 4)
+
+R6 = (no_TSE ∧ no_BLI ∧ no_FPE ∧ no_KP ∧ FP, 6)
+
+R7 = (no_TSE ∧ no_BLI ∧ no_FPE ∧ no_KP ∧ no_FP ∧ no_DGL, 2)
+
+R8 = (no_TSE ∧ no_BLI ∧ no_FPE ∧ no_KP ∧ no_FP ∧ DGL, 4)
+
+

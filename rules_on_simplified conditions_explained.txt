@@ -1,0 +1,46 @@
+RULES BASED ON SIMPLIFIED CONDITIONS
+
+R1 = (TSE ∧ no_CRR, 1)
+
+R2 = (TSE ∧ CRR, 1)
+
+R3 = (no_TSE ∧ BLI, 3)
+
+R4 = (no_TSE ∧ no_BLI ∧ FPE, 5)
+
+R5 = (no_TSE ∧ no_BLI ∧ no_FPE ∧ KP, 4)
+
+R6 = (no_TSE ∧ no_BLI ∧ no_FPE ∧ no_KP ∧ FP, 6)
+
+R7 = (no_TSE ∧ no_BLI ∧ no_FPE ∧ no_KP ∧ no_FP ∧ no_DGL, 2)
+
+R8 = (no_TSE ∧ no_BLI ∧ no_FPE ∧ no_KP ∧ no_FP ∧ DGL, 4)
+
+
+
+Features:
+thinning_suprapapillary_epidermis (TSE)	
+band_like_infiltrate (BLI)	 		
+clubbing_rete_ridges (CRR)
+fibrosis_papillary_dermis (FPE)		
+koebner_phenomenon (KP)					
+follicular_papules (FP)			
+disappearance_granular_layer (DGL)
+
+Original conditions derived from the final DT:
+thinning_suprapapillary_epidermis <= 0.5
+band_like_infiltrate <= 1.5
+clubbing_rete_ridges <= 0.5
+fibrosis_papillary_dermis <= 0.5
+koebner_phenomenon <= 0.5
+follicular_papules <= 1.5
+disappearance_granular_layer <= 0.5
+
+Simplified Conditions (without thresholds, same order as above):
+no_TSE
+no_BLI		
+no_CRR
+no_FPE	
+no_KP					
+no_FP	
+no_DGL
