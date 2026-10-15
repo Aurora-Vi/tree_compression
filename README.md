@@ -1,4 +1,4 @@
-# Decision Tree Compression for Classification of Erythemato-squamous Diseases
+# Compression of a Decision Tree for Classification of Erythemato-squamous Diseases
 
 This project applies a decision tree (max depth 6, min samples per leaf 3) to the UCI Dermatology dataset and extracts 8 decision rules (R1–R8) to classify 6 erythemato-squamous diseases.
 
