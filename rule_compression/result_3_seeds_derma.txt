@@ -1,0 +1,108 @@
+==================================================
+seed = None
+no background knowledge given
+rules syntax verified
+Model before compression:
+R1 = ((clubbing_rete_ridges <= "0.5") and (thinning_suprapapillary_epidermis > "0.5"), "1")
+R2 = ((clubbing_rete_ridges > "0.5") and (thinning_suprapapillary_epidermis > "0.5"), "1")
+R3 = ((band_like_infiltrate > "1.5") and (thinning_suprapapillary_epidermis <= "0.5"), "3")
+R4 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "5")
+R5 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (koebner_phenomenon > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+R6 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules > "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "6")
+R7 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer <= "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "2")
+R8 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer > "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+
+Model after compression:
+R1 = ((thinning_suprapapillary_epidermis > "0.5"), "1")
+R2 = ((thinning_suprapapillary_epidermis > "0.5"), "1")
+R3 = ((band_like_infiltrate > "1.5") and (thinning_suprapapillary_epidermis <= "0.5"), "3")
+R4 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "5")
+R5 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (koebner_phenomenon > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+R6 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules > "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "6")
+R7 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer <= "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "2")
+R8 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer > "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+Removed literal: (clubbing_rete_ridges <= "0.5") from rule R1
+Removed literal: (clubbing_rete_ridges > "0.5") from rule R2
+Removed literal: (koebner_phenomenon <= "0.5") from rule R8
+
+After removing redundant rules:
+Removed redundant rule: R1
+R2 = ((thinning_suprapapillary_epidermis > "0.5"), "1")
+R3 = ((band_like_infiltrate > "1.5") and (thinning_suprapapillary_epidermis <= "0.5"), "3")
+R4 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "5")
+R5 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (koebner_phenomenon > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+R6 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules > "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "6")
+R7 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer <= "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "2")
+R8 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer > "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+==================================================
+seed = 3
+no background knowledge given
+rules syntax verified
+Model before compression:
+R1 = ((clubbing_rete_ridges <= "0.5") and (thinning_suprapapillary_epidermis > "0.5"), "1")
+R2 = ((clubbing_rete_ridges > "0.5") and (thinning_suprapapillary_epidermis > "0.5"), "1")
+R3 = ((band_like_infiltrate > "1.5") and (thinning_suprapapillary_epidermis <= "0.5"), "3")
+R4 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "5")
+R5 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (koebner_phenomenon > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+R6 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules > "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "6")
+R7 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer <= "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "2")
+R8 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer > "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+
+Model after compression:
+R1 = ((thinning_suprapapillary_epidermis > "0.5"), "1")
+R2 = ((thinning_suprapapillary_epidermis > "0.5"), "1")
+R3 = ((band_like_infiltrate > "1.5") and (thinning_suprapapillary_epidermis <= "0.5"), "3")
+R4 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "5")
+R5 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (koebner_phenomenon > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+R6 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules > "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "6")
+R7 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer <= "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "2")
+R8 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer > "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+Removed literal: (clubbing_rete_ridges <= "0.5") from rule R1
+Removed literal: (koebner_phenomenon <= "0.5") from rule R8
+Removed literal: (clubbing_rete_ridges > "0.5") from rule R2
+
+After removing redundant rules:
+Removed redundant rule: R1
+R2 = ((thinning_suprapapillary_epidermis > "0.5"), "1")
+R3 = ((band_like_infiltrate > "1.5") and (thinning_suprapapillary_epidermis <= "0.5"), "3")
+R4 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "5")
+R5 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (koebner_phenomenon > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+R6 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules > "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "6")
+R7 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer <= "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "2")
+R8 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer > "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+==================================================
+seed = 7
+no background knowledge given
+rules syntax verified
+Model before compression:
+R1 = ((clubbing_rete_ridges <= "0.5") and (thinning_suprapapillary_epidermis > "0.5"), "1")
+R2 = ((clubbing_rete_ridges > "0.5") and (thinning_suprapapillary_epidermis > "0.5"), "1")
+R3 = ((band_like_infiltrate > "1.5") and (thinning_suprapapillary_epidermis <= "0.5"), "3")
+R4 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "5")
+R5 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (koebner_phenomenon > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+R6 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules > "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "6")
+R7 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer <= "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "2")
+R8 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer > "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+
+Model after compression:
+R1 = ((thinning_suprapapillary_epidermis > "0.5"), "1")
+R2 = ((thinning_suprapapillary_epidermis > "0.5"), "1")
+R3 = ((band_like_infiltrate > "1.5") and (thinning_suprapapillary_epidermis <= "0.5"), "3")
+R4 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "5")
+R5 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (koebner_phenomenon > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+R6 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules > "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "6")
+R7 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer <= "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "2")
+R8 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer > "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+Removed literal: (koebner_phenomenon <= "0.5") from rule R8
+Removed literal: (clubbing_rete_ridges <= "0.5") from rule R1
+Removed literal: (clubbing_rete_ridges > "0.5") from rule R2
+
+After removing redundant rules:
+Removed redundant rule: R1
+R2 = ((thinning_suprapapillary_epidermis > "0.5"), "1")
+R3 = ((band_like_infiltrate > "1.5") and (thinning_suprapapillary_epidermis <= "0.5"), "3")
+R4 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "5")
+R5 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (koebner_phenomenon > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+R6 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules > "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "6")
+R7 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer <= "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "2")
+R8 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer > "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")

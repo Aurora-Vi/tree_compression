@@ -1,0 +1,8 @@
+c (worst_concave_points > 0.139) -> (worst_concave_points > 0.136)
+(worst_concave_points <= 0.139) or (worst_concave_points > 0.136)
+
+c (mean_concavity > 0.097) -> (mean_concavity > 0.072)
+(mean_concavity <= 0.097) or (mean_concavity > 0.072)
+
+
+

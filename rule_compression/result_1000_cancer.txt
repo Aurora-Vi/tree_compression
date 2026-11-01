@@ -1,0 +1,363 @@
+--------------------------------------------------
+--------------------------------------------------
+Shuffled compression:
+no background knowledge given
+rules syntax verified
+Background: SAT
+R1: SAT
+R10: SAT
+R11: SAT
+R12: SAT
+R2: SAT
+R3: SAT
+R4: SAT
+R5: SAT
+R6: SAT
+R7: SAT
+R8: SAT
+R9: SAT
+Overlap R1, R10: no
+Overlap R1, R11: no
+Overlap R1, R12: no
+Overlap R1, R2: no
+Overlap R1, R3: no
+Overlap R1, R4: no
+Overlap R1, R5: no
+Overlap R1, R6: no
+Overlap R1, R7: no
+Overlap R1, R8: no
+Overlap R1, R9: no
+Overlap R10, R11: no
+Overlap R10, R12: no
+Overlap R10, R2: no
+Overlap R10, R3: no
+Overlap R10, R4: no
+Overlap R10, R5: no
+Overlap R10, R6: no
+Overlap R10, R7: no
+Overlap R10, R8: no
+Overlap R10, R9: no
+Overlap R11, R12: no
+Overlap R11, R2: no
+Overlap R11, R3: no
+Overlap R11, R4: no
+Overlap R11, R5: no
+Overlap R11, R6: no
+Overlap R11, R7: no
+Overlap R11, R8: no
+Overlap R11, R9: no
+Overlap R12, R2: no
+Overlap R12, R3: no
+Overlap R12, R4: no
+Overlap R12, R5: no
+Overlap R12, R6: no
+Overlap R12, R7: no
+Overlap R12, R8: no
+Overlap R12, R9: no
+Overlap R2, R3: no
+Overlap R2, R4: no
+Overlap R2, R5: no
+Overlap R2, R6: no
+Overlap R2, R7: no
+Overlap R2, R8: no
+Overlap R2, R9: no
+Overlap R3, R4: no
+Overlap R3, R5: no
+Overlap R3, R6: no
+Overlap R3, R7: no
+Overlap R3, R8: no
+Overlap R3, R9: no
+Overlap R4, R5: no
+Overlap R4, R6: no
+Overlap R4, R7: no
+Overlap R4, R8: no
+Overlap R4, R9: no
+Overlap R5, R6: no
+Overlap R5, R7: no
+Overlap R5, R8: no
+Overlap R5, R9: no
+Overlap R6, R7: no
+Overlap R6, R8: no
+Overlap R6, R9: no
+Overlap R7, R8: no
+Overlap R7, R9: no
+Overlap R8, R9: no
+R1: not redundant
+R10: not redundant
+R11: not redundant
+R12: not redundant
+R2: not redundant
+R3: not redundant
+R4: not redundant
+R5: not redundant
+R6: not redundant
+R7: not redundant
+R8: not redundant
+R9: not redundant
+
+Rule 1:
+  (radius_error <= "0.643"): not redundant
+  (worst_area <= "785.75"): globally redundant
+  (worst_concave_points <= "0.136"): not redundant
+  (worst_radius <= "16.805"): not redundant
+
+Rule 2:
+  (radius_error <= "0.643"): not redundant
+  (worst_area > "785.75"): globally redundant
+  (worst_concave_points <= "0.136"): not redundant
+  (worst_radius <= "16.805"): not redundant
+
+Rule 3:
+  (mean_compactness <= "0.063"): not redundant
+  (radius_error > "0.643"): not redundant
+  (worst_concave_points <= "0.136"): not redundant
+  (worst_radius <= "16.805"): not redundant
+
+Rule 4:
+  (mean_compactness > "0.063"): not redundant
+  (radius_error > "0.643"): globally redundant
+  (worst_concave_points <= "0.136"): not redundant
+  (worst_radius <= "16.805"): not redundant
+
+Rule 5:
+  (worst_concave_points <= "0.139"): not redundant
+  (worst_concave_points > "0.136"): not redundant
+  (worst_radius <= "16.805"): not redundant
+  (worst_texture <= "25.67"): globally redundant
+
+Rule 6:
+  (worst_concave_points > "0.136"): not redundant
+  (worst_concave_points > "0.139"): not redundant
+  (worst_radius <= "16.805"): not redundant
+  (worst_texture <= "25.67"): not redundant
+
+Rule 7:
+  (mean_concavity <= "0.097"): globally redundant
+  (worst_concave_points > "0.136"): not redundant
+  (worst_radius <= "16.805"): not redundant
+  (worst_texture > "25.67"): not redundant
+
+Rule 8:
+  (mean_concavity > "0.097"): globally redundant
+  (worst_concave_points > "0.136"): not redundant
+  (worst_radius <= "16.805"): not redundant
+  (worst_texture > "25.67"): not redundant
+
+Rule 9:
+  (fractal_dimension_error <= "0.002"): not redundant
+  (mean_concavity <= "0.072"): globally redundant
+  (mean_texture <= "19.545"): globally redundant
+  (worst_radius > "16.805"): not redundant
+
+Rule 10:
+  (fractal_dimension_error > "0.002"): not redundant
+  (mean_concavity <= "0.072"): not redundant
+  (mean_texture <= "19.545"): not redundant
+  (worst_radius > "16.805"): not redundant
+
+Rule 11:
+  (mean_concavity <= "0.072"): globally redundant
+  (mean_texture > "19.545"): not redundant
+  (worst_radius > "16.805"): not redundant
+
+Rule 12:
+  (mean_concavity > "0.072"): not redundant
+  (worst_radius > "16.805"): not redundant
+==================================================
+WITHOUT background knowledge: original 12 rules, 45 literals
+
+1 distinct compressed model(s) over 1000 shuffles
+
+Model 1: 1000 seeds (first: [0, 1, 2, 3, 4]), 30 literals
+R2 = ((radius_error <= "0.643") and (worst_concave_points <= "0.136") and (worst_radius <= "16.805"), "1")
+R3 = ((mean_compactness <= "0.063") and (radius_error > "0.643") and (worst_concave_points <= "0.136") and (worst_radius <= "16.805"), "0")
+R4 = ((mean_compactness > "0.063") and (worst_concave_points <= "0.136") and (worst_radius <= "16.805"), "1")
+R5 = ((worst_concave_points <= "0.139") and (worst_concave_points > "0.136") and (worst_radius <= "16.805"), "0")
+R6 = ((worst_concave_points > "0.136") and (worst_concave_points > "0.139") and (worst_radius <= "16.805") and (worst_texture <= "25.67"), "1")
+R8 = ((worst_concave_points > "0.136") and (worst_radius <= "16.805") and (worst_texture > "25.67"), "0")
+R9 = ((fractal_dimension_error <= "0.002") and (worst_radius > "16.805"), "0")
+R10 = ((fractal_dimension_error > "0.002") and (mean_concavity <= "0.072") and (mean_texture <= "19.545") and (worst_radius > "16.805"), "1")
+R11 = ((mean_texture > "19.545") and (worst_radius > "16.805"), "0")
+R12 = ((mean_concavity > "0.072") and (worst_radius > "16.805"), "0")
+background syntax verified
+rules syntax verified
+Background: SAT
+R1: SAT
+R10: SAT
+R11: SAT
+R12: SAT
+R2: SAT
+R3: SAT
+R4: SAT
+R5: SAT
+R6: SAT
+R7: SAT
+R8: SAT
+R9: SAT
+Overlap R1, R10: no
+Overlap R1, R11: no
+Overlap R1, R12: no
+Overlap R1, R2: no
+Overlap R1, R3: no
+Overlap R1, R4: no
+Overlap R1, R5: no
+Overlap R1, R6: no
+Overlap R1, R7: no
+Overlap R1, R8: no
+Overlap R1, R9: no
+Overlap R10, R11: no
+Overlap R10, R12: no
+Overlap R10, R2: no
+Overlap R10, R3: no
+Overlap R10, R4: no
+Overlap R10, R5: no
+Overlap R10, R6: no
+Overlap R10, R7: no
+Overlap R10, R8: no
+Overlap R10, R9: no
+Overlap R11, R12: no
+Overlap R11, R2: no
+Overlap R11, R3: no
+Overlap R11, R4: no
+Overlap R11, R5: no
+Overlap R11, R6: no
+Overlap R11, R7: no
+Overlap R11, R8: no
+Overlap R11, R9: no
+Overlap R12, R2: no
+Overlap R12, R3: no
+Overlap R12, R4: no
+Overlap R12, R5: no
+Overlap R12, R6: no
+Overlap R12, R7: no
+Overlap R12, R8: no
+Overlap R12, R9: no
+Overlap R2, R3: no
+Overlap R2, R4: no
+Overlap R2, R5: no
+Overlap R2, R6: no
+Overlap R2, R7: no
+Overlap R2, R8: no
+Overlap R2, R9: no
+Overlap R3, R4: no
+Overlap R3, R5: no
+Overlap R3, R6: no
+Overlap R3, R7: no
+Overlap R3, R8: no
+Overlap R3, R9: no
+Overlap R4, R5: no
+Overlap R4, R6: no
+Overlap R4, R7: no
+Overlap R4, R8: no
+Overlap R4, R9: no
+Overlap R5, R6: no
+Overlap R5, R7: no
+Overlap R5, R8: no
+Overlap R5, R9: no
+Overlap R6, R7: no
+Overlap R6, R8: no
+Overlap R6, R9: no
+Overlap R7, R8: no
+Overlap R7, R9: no
+Overlap R8, R9: no
+R1: not redundant
+R10: not redundant
+R11: not redundant
+R12: not redundant
+R2: not redundant
+R3: not redundant
+R4: not redundant
+R5: not redundant
+R6: not redundant
+R7: not redundant
+R8: not redundant
+R9: not redundant
+
+Rule 1:
+  (radius_error <= "0.643"): not redundant
+  (worst_area <= "785.75"): globally redundant
+  (worst_concave_points <= "0.136"): not redundant
+  (worst_radius <= "16.805"): not redundant
+
+Rule 2:
+  (radius_error <= "0.643"): not redundant
+  (worst_area > "785.75"): globally redundant
+  (worst_concave_points <= "0.136"): not redundant
+  (worst_radius <= "16.805"): not redundant
+
+Rule 3:
+  (mean_compactness <= "0.063"): not redundant
+  (radius_error > "0.643"): not redundant
+  (worst_concave_points <= "0.136"): not redundant
+  (worst_radius <= "16.805"): not redundant
+
+Rule 4:
+  (mean_compactness > "0.063"): not redundant
+  (radius_error > "0.643"): globally redundant
+  (worst_concave_points <= "0.136"): not redundant
+  (worst_radius <= "16.805"): not redundant
+
+Rule 5:
+  (worst_concave_points <= "0.139"): not redundant
+  (worst_concave_points > "0.136"): not redundant
+  (worst_radius <= "16.805"): not redundant
+  (worst_texture <= "25.67"): globally redundant
+
+Rule 6:
+  (worst_concave_points > "0.136"): locally redundant
+  (worst_concave_points > "0.139"): not redundant
+  (worst_radius <= "16.805"): not redundant
+  (worst_texture <= "25.67"): not redundant
+
+Rule 7:
+  (mean_concavity <= "0.097"): globally redundant
+  (worst_concave_points > "0.136"): not redundant
+  (worst_radius <= "16.805"): not redundant
+  (worst_texture > "25.67"): not redundant
+
+Rule 8:
+  (mean_concavity > "0.097"): globally redundant
+  (worst_concave_points > "0.136"): not redundant
+  (worst_radius <= "16.805"): globally redundant
+  (worst_texture > "25.67"): not redundant
+
+Rule 9:
+  (fractal_dimension_error <= "0.002"): not redundant
+  (mean_concavity <= "0.072"): globally redundant
+  (mean_texture <= "19.545"): globally redundant
+  (worst_radius > "16.805"): not redundant
+
+Rule 10:
+  (fractal_dimension_error > "0.002"): not redundant
+  (mean_concavity <= "0.072"): not redundant
+  (mean_texture <= "19.545"): not redundant
+  (worst_radius > "16.805"): not redundant
+
+Rule 11:
+  (mean_concavity <= "0.072"): globally redundant
+  (mean_texture > "19.545"): not redundant
+  (worst_radius > "16.805"): not redundant
+
+Rule 12:
+  (mean_concavity > "0.072"): not redundant
+  (worst_radius > "16.805"): not redundant
+==================================================
+WITH background knowledge: original 12 rules, 45 literals
+
+1 distinct compressed model(s) over 1000 shuffles
+
+Model 1: 1000 seeds (first: [0, 1, 2, 3, 4]), 29 literals
+R2 = ((radius_error <= "0.643") and (worst_concave_points <= "0.136") and (worst_radius <= "16.805"), "1")
+R3 = ((mean_compactness <= "0.063") and (radius_error > "0.643") and (worst_concave_points <= "0.136") and (worst_radius <= "16.805"), "0")
+R4 = ((mean_compactness > "0.063") and (worst_concave_points <= "0.136") and (worst_radius <= "16.805"), "1")
+R5 = ((worst_concave_points <= "0.139") and (worst_concave_points > "0.136") and (worst_radius <= "16.805"), "0")
+R6 = ((worst_concave_points > "0.139") and (worst_radius <= "16.805") and (worst_texture <= "25.67"), "1")
+R8 = ((worst_concave_points > "0.136") and (worst_radius <= "16.805") and (worst_texture > "25.67"), "0")
+R9 = ((fractal_dimension_error <= "0.002") and (worst_radius > "16.805"), "0")
+R10 = ((fractal_dimension_error > "0.002") and (mean_concavity <= "0.072") and (mean_texture <= "19.545") and (worst_radius > "16.805"), "1")
+R11 = ((mean_texture > "19.545") and (worst_radius > "16.805"), "0")
+R12 = ((mean_concavity > "0.072") and (worst_radius > "16.805"), "0")
+==================================================
+SUMMARY
+no BK: 1 distinct model(s); (rules, literals) = [(10, 30)]
+with BK: 1 distinct model(s); (rules, literals) = [(10, 29)]

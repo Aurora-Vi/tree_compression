@@ -1,0 +1,13 @@
+
+R1 = ((radius_error <= "0.643") and (worst_concave_points <= "0.136") and (worst_radius <= "16.805"), "1")
+R2 = ((radius_error <= "0.643") and (worst_concave_points <= "0.136") and (worst_radius <= "16.805"), "1")
+R3 = ((mean_compactness <= "0.063") and (radius_error > "0.643") and (worst_concave_points <= "0.136") and (worst_radius <= "16.805"), "0")
+R4 = ((mean_compactness > "0.063") and (worst_concave_points <= "0.136") and (worst_radius <= "16.805"), "1")
+R5 = ((worst_concave_points <= "0.139") and (worst_concave_points > "0.136") and (worst_radius <= "16.805"), "0")
+R6 = ((worst_concave_points > "0.139") and (worst_radius <= "16.805") and (worst_texture <= "25.67"), "1")
+R7 = ((worst_concave_points > "0.136") and (worst_radius <= "16.805") and (worst_texture > "25.67"), "0")
+R8 = ((worst_concave_points > "0.136") and (worst_radius <= "16.805") and (worst_texture > "25.67"), "0")
+R9 = ((fractal_dimension_error <= "0.002") and (worst_radius > "16.805"), "0")
+R10 = ((fractal_dimension_error > "0.002") and (mean_concavity <= "0.072") and (mean_texture <= "19.545") and (worst_radius > "16.805"), "1")
+R11 = ((mean_texture > "19.545") and (worst_radius > "16.805"), "0")
+R12 = ((mean_concavity > "0.072") and (worst_radius > "16.805"), "0")

@@ -1,0 +1,112 @@
+--------------------------------------------------
+--------------------------------------------------
+Shuffled compression:
+no background knowledge given
+rules syntax verified
+Background: SAT
+R1: SAT
+R2: SAT
+R3: SAT
+R4: SAT
+R5: SAT
+R6: SAT
+R7: SAT
+R8: SAT
+Overlap R1, R2: no
+Overlap R1, R3: no
+Overlap R1, R4: no
+Overlap R1, R5: no
+Overlap R1, R6: no
+Overlap R1, R7: no
+Overlap R1, R8: no
+Overlap R2, R3: no
+Overlap R2, R4: no
+Overlap R2, R5: no
+Overlap R2, R6: no
+Overlap R2, R7: no
+Overlap R2, R8: no
+Overlap R3, R4: no
+Overlap R3, R5: no
+Overlap R3, R6: no
+Overlap R3, R7: no
+Overlap R3, R8: no
+Overlap R4, R5: no
+Overlap R4, R6: no
+Overlap R4, R7: no
+Overlap R4, R8: no
+Overlap R5, R6: no
+Overlap R5, R7: no
+Overlap R5, R8: no
+Overlap R6, R7: no
+Overlap R6, R8: no
+Overlap R7, R8: no
+R1: not redundant
+R2: not redundant
+R3: not redundant
+R4: not redundant
+R5: not redundant
+R6: not redundant
+R7: not redundant
+R8: not redundant
+
+Rule 1:
+  (clubbing_rete_ridges <= "0.5"): globally redundant
+  (thinning_suprapapillary_epidermis > "0.5"): not redundant
+
+Rule 2:
+  (clubbing_rete_ridges > "0.5"): globally redundant
+  (thinning_suprapapillary_epidermis > "0.5"): not redundant
+
+Rule 3:
+  (band_like_infiltrate > "1.5"): not redundant
+  (thinning_suprapapillary_epidermis <= "0.5"): not redundant
+
+Rule 4:
+  (band_like_infiltrate <= "1.5"): not redundant
+  (fibrosis_papillary_dermis > "0.5"): not redundant
+  (thinning_suprapapillary_epidermis <= "0.5"): not redundant
+
+Rule 5:
+  (band_like_infiltrate <= "1.5"): not redundant
+  (fibrosis_papillary_dermis <= "0.5"): not redundant
+  (koebner_phenomenon > "0.5"): not redundant
+  (thinning_suprapapillary_epidermis <= "0.5"): not redundant
+
+Rule 6:
+  (band_like_infiltrate <= "1.5"): not redundant
+  (fibrosis_papillary_dermis <= "0.5"): not redundant
+  (follicular_papules > "1.5"): not redundant
+  (koebner_phenomenon <= "0.5"): not redundant
+  (thinning_suprapapillary_epidermis <= "0.5"): not redundant
+
+Rule 7:
+  (band_like_infiltrate <= "1.5"): not redundant
+  (disappearance_granular_layer <= "0.5"): not redundant
+  (fibrosis_papillary_dermis <= "0.5"): not redundant
+  (follicular_papules <= "1.5"): not redundant
+  (koebner_phenomenon <= "0.5"): not redundant
+  (thinning_suprapapillary_epidermis <= "0.5"): not redundant
+
+Rule 8:
+  (band_like_infiltrate <= "1.5"): not redundant
+  (disappearance_granular_layer > "0.5"): not redundant
+  (fibrosis_papillary_dermis <= "0.5"): not redundant
+  (follicular_papules <= "1.5"): not redundant
+  (koebner_phenomenon <= "0.5"): globally redundant
+  (thinning_suprapapillary_epidermis <= "0.5"): not redundant
+==================================================
+WITHOUT background knowledge: original 8 rules, 30 literals
+
+1 distinct compressed model(s) over 1000 shuffles
+
+Model 1: 1000 seeds (first: [0, 1, 2, 3, 4]), 26 literals
+R2 = ((thinning_suprapapillary_epidermis > "0.5"), "1")
+R3 = ((band_like_infiltrate > "1.5") and (thinning_suprapapillary_epidermis <= "0.5"), "3")
+R4 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "5")
+R5 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (koebner_phenomenon > "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+R6 = ((band_like_infiltrate <= "1.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules > "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "6")
+R7 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer <= "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (koebner_phenomenon <= "0.5") and (thinning_suprapapillary_epidermis <= "0.5"), "2")
+R8 = ((band_like_infiltrate <= "1.5") and (disappearance_granular_layer > "0.5") and (fibrosis_papillary_dermis <= "0.5") and (follicular_papules <= "1.5") and (thinning_suprapapillary_epidermis <= "0.5"), "4")
+==================================================
+SUMMARY
+no BK: 1 distinct model(s); (rules, literals) = [(7, 26)]
