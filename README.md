@@ -63,13 +63,13 @@ Notes: no missing values.
 
 ## Decision Trees and Rules
 - **Dermatology:** scikit-learn's `DecisionTreeClassifier` with `max_depth=6` and `min_samples_leaf=3`, converted into 8 decision rules (R1–R8) that classify the 6 diseases.
-- **Breast cancer:** `DecisionTreeClassifier` with `max_depth=4` and `min_samples_leaf=2`, converted into 12 decision rules (R1-R12) that classify the 2 classes.
+- **Breast cancer:** `DecisionTreeClassifier` with `max_depth=4` and `min_samples_leaf=2`, converted into 12 decision rules (R1-R12) that classify the two types of tumours.
 
 ## Rule Compression
-`rule_compression/model.py` encodes the rules as propositional clauses and uses a SAT solver to check satisfiability, overlaps and redundancies, and to compress the rule set. Compression is repeated over random shuffles of the rule and literal order to compare the resulting models; for the breast cancer rules it is also run with background knowledge.
+`rule_compression/model.py` encodes the rules as propositional clauses and uses a SAT solver to check satisfiability, overlaps and redundancies and to compress the rule set. Compression is repeated over random shuffles of the rule and literal order to compare the resulting models; for the breast cancer rules it is also run with background knowledge.
 
 ## Acknowledgments
-`rule_compression/model.py` is based on code by Mohamed Siala (Stockholm University, 2026), provided in the farme of the MSc course Research Topics in Data Science and modified by the author.
+`rule_compression/model.py` is based on the code by Mohamed Siala (Stockholm University, 2026), provided in the farme of the MSc course Research Topics in Data Science, and modified by the author.
 
 Datasets provided by the UCI Machine Learning Repository.
 
