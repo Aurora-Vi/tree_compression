@@ -69,7 +69,7 @@ Notes: no missing values.
 `rule_compression/model.py` encodes the rules as propositional clauses and uses a SAT solver to check satisfiability, overlaps and redundancies and to compress the rule set. Compression is repeated over random shuffles of the rule and literal order to compare the resulting models; for the breast cancer rules it is also run with background knowledge.
 
 ## Acknowledgments
-`rule_compression/model.py` is based on the code by Mohamed Siala (Stockholm University, 2026), provided in the farme of the MSc course Research Topics in Data Science, and modified by the author.
+`rule_compression/model.py` is based on the code by Mohamed Siala (Stockholm University, 2026), provided in the frame of the MSc course Research Topics in Data Science, and modified by the author.
 
 Datasets provided by the UCI Machine Learning Repository.
 
